@@ -5,12 +5,12 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: Check out repository
         uses: actions/checkout@v4
+      - name: Record make version
+        run: make --version
+      - name: Record python version
+        run: python --version
       - name: List files in the repository
         run: ls ${{ github.workspace }}
-      - name: Check python version
-        run: python --version
-      - name: Check make version
-        run: make --version
       - run: echo "This job's status is ${{ job.status }}."
