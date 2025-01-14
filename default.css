@@ -8,21 +8,6 @@ grid {
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-gap: 1rem; }
 
-.hcard {
-  margin: 0;
-  display: flex;
-  flex-flow: row;
-  border: 1px solid black;
-  border-radius: 1rem;
-  padding: 1rem; }
-
-.hcard > form {
-  align-self: center; }
-
-.hcard > form > input {
-  font-size: 1rem;
-  font-family: helvetica; }
-
 .card {
   margin: 0;
   display: flex;
